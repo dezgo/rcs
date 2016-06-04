@@ -33,12 +33,20 @@
             .title {
                 font-size: 96px;
             }
+            .contact {
+	            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+                font-size: 26px;
+            }
         </style>
     </head>
     <body>
         <div class="container">
             <div class="content">
                 <div class="title">Aameen Rendering &amp; Construction</div>
+                <br>
+                <div class="contact">
+                Nabeel Allkoud - 0430 003 434
+            </div>
             </div>
         </div>
     </body>
