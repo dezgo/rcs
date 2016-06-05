@@ -9,19 +9,19 @@
     }
 
     .title1 {
-        font-size: 20pt;
+        font-size: 16;
         color: #97D621;
     }
 
     .title2 {
-        font-size: 20pt;
-        color: white;
+        font-size: 16;
     }
 
     .custom-carousel {
         width: 640;
         height: 480;
     }
+
 </style>
 
 <script>
@@ -44,7 +44,7 @@ $( document ).ready(function() {
         <div class="col-md-4">
             <img alt="Aameen Rendering Logo" src="/images/logo.png">
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 text-right">
             <br>
             <span class="title1">SYDNEY</span>&nbsp;
             <span class="title2">02&nbsp;9794&nbsp;3434</span>
@@ -133,8 +133,8 @@ $( document ).ready(function() {
 
     <div class="row">
         <div class="col-md-7">
-            <h1>WELCOME TO</h1>
-            <h1>AAMEEN RENDERING &amp; CONSTRUCTION SERVICES PTY LTD</h1>
+            <h2>WELCOME TO</h2>
+            <h2>AAMEEN RENDERING &amp; CONSTRUCTION SERVICES PTY LTD</h2>
             Aameen Rendering &amp; Construction Services Pty Ltd offers high quality services
             and solutions that last.<br>
             <Br>
@@ -150,7 +150,64 @@ $( document ).ready(function() {
             finish coatings. We can also provide heritage cement for an antique finish.
         </div>
         <div class="col-md-5">
-            <h1>REQUEST A CALL BACK</h1>
+            @if (session('message_success'))
+            <div class="alert alert-success" role="alert">
+              {{ session('message_success') }}
+            </div>
+            @else
+                @if (session('message_error'))
+                <div class="alert alert-danger" role="alert">
+                  {{ session('message_error') }}
+                </div>
+                @endif
+              <h2>REQUEST A CALL BACK</h2>
+            <br>
+            <form method="POST" action="/contact_send" id="frmContact">
+              {{ csrf_field() }}
+
+              <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
+                <label for="name" class="control-label">Name*</label><br>
+                <input type="text" id="name" name="name" size="50" class="form-control" value="{{ old('name') }}">
+                @if ($errors->has('name'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('name') }}</strong>
+                    </span>
+                @endif
+              </div>
+
+              <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                <label for="email" class="control-label">Email</label><br>
+                <input type="text" id="email" name="email" size="50" class="form-control" value="{{ old('email') }}">
+                @if ($errors->has('email'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('email') }}</strong>
+                    </span>
+                @endif
+              </div>
+
+              <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
+                <label for="phone" class="control-label">Telephone</label><br>
+                <input type="text" id="phone" name="phone" size="15" class="form-control" value="{{ old('phone') }}">
+                @if ($errors->has('phone'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('phone') }}</strong>
+                    </span>
+                @endif
+              </div>
+
+              <div class="form-group{{ $errors->has('message') ? ' has-error' : '' }}">
+                <label for="message" class="control-label">Message</label>
+                <textarea cols="50" rows="5" id="message" name="message" class="form-control">{{ old('message') }}</textarea>
+                @if ($errors->has('message'))
+                    <span class="help-block">
+                        <strong>{{ $errors->first('message') }}</strong>
+                    </span>
+                @endif
+              </div>
+
+              <input type="submit" class="btn btn-primary" value="Send">
+            </form>
+            @endif
 
         </div>
     </div>
