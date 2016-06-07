@@ -9,15 +9,23 @@
 
     <!-- Fonts -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" integrity="sha384-XdYbMnZ/QjLh6iI4ogqCTaIjrFk87ip+ekIjefZch0Y+PvJ8CDYtEs1ipDmPorQ+" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700">
+    <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700"> -->
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     {{-- <link href="{{ elixir('css/app.css') }}" rel="stylesheet"> --}}
 
+    <link rel="stylesheet" id="dt-font-h1-skin3-css" href="http://fonts.googleapis.com/css?family=Open+Sans%3A300&amp;ver=4.0.11" type="text/css" media="all">
+    <link rel="stylesheet" id="dt-font-h3-skin3-css" href="http://fonts.googleapis.com/css?family=Open+Sans&amp;ver=4.0.11" type="text/css" media="all">
+
     <style>
         body {
-            font-family: 'Lato';
+            font-style: normal;
+            font-variant: normal;
+            font-weight: 300;
+            font-stretch: normal;
+            font-family: 'Open Sans', Helvetica, Arial, Verdana, sans-serif;
         }
 
         .fa-btn {

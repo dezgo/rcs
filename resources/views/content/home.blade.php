@@ -17,9 +17,14 @@
         font-size: 16;
     }
 
-    .custom-carousel {
-        width: 640;
-        height: 480;
+    div.c-wrapper {
+        width: 85%;
+        margin: auto;
+    }
+
+    .carousel-inner > .item > img,
+    .carousel-inner > .item > a > img {
+        margin: auto;
     }
 
 </style>
@@ -64,17 +69,17 @@ $( document ).ready(function() {
     </div>
     <br>
 
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" style="width: 640px; height: 480px; margin: 0 auto">
+    <div class="c-wrapper">
+    <div id="carousel-rcs" class="carousel slide" data-ride="carousel" style="width: 960; height: 450px; margin: 0 auto">
       <!-- Indicators -->
       <ol class="carousel-indicators">
-        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="4"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="5"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="6"></li>
-        <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+        <li data-target="#carousel-rcs" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-rcs" data-slide-to="1"></li>
+        <li data-target="#carousel-rcs" data-slide-to="2"></li>
+        <li data-target="#carousel-rcs" data-slide-to="3"></li>
+        <li data-target="#carousel-rcs" data-slide-to="4"></li>
+        <li data-target="#carousel-rcs" data-slide-to="5"></li>
+        <li data-target="#carousel-rcs" data-slide-to="6"></li>
       </ol>
 
       <!-- Wrapper for slides -->
@@ -100,9 +105,6 @@ $( document ).ready(function() {
         <div class="item">
             <img src="/images/sld7.jpg" alt="Slide 7">
         </div>
-        <div class="item">
-            <img src="/images/sld8.jpg" alt="Slide 8">
-        </div>
       </div>
 
       <!-- Controls -->
@@ -114,6 +116,7 @@ $( document ).ready(function() {
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
       </a>
+    </div>
     </div>
 <br>
     <div class="row">
@@ -145,7 +148,7 @@ $( document ).ready(function() {
             We have recently increased our range of rendering services which enables us to
             provide you with the highest quality solutions for any type of rendering project.<br>
             <br>
-            Our experienced team has knowledge in various unique fifinishes from basic
+            Our experienced team has knowledge in various unique finishes from basic
             conventional cement render to polymer-modified acrylic including architectural
             finish coatings. We can also provide heritage cement for an antique finish.
         </div>
@@ -166,7 +169,7 @@ $( document ).ready(function() {
               {{ csrf_field() }}
 
               <div class="form-group{{ $errors->has('name') ? ' has-error' : '' }}">
-                <label for="name" class="control-label">Name*</label><br>
+                Name*<br>
                 <input type="text" id="name" name="name" size="50" class="form-control" value="{{ old('name') }}">
                 @if ($errors->has('name'))
                     <span class="help-block">
@@ -176,7 +179,7 @@ $( document ).ready(function() {
               </div>
 
               <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
-                <label for="email" class="control-label">Email</label><br>
+                Email<br>
                 <input type="text" id="email" name="email" size="50" class="form-control" value="{{ old('email') }}">
                 @if ($errors->has('email'))
                     <span class="help-block">
@@ -186,7 +189,7 @@ $( document ).ready(function() {
               </div>
 
               <div class="form-group{{ $errors->has('phone') ? ' has-error' : '' }}">
-                <label for="phone" class="control-label">Telephone</label><br>
+                Telephone<br>
                 <input type="text" id="phone" name="phone" size="15" class="form-control" value="{{ old('phone') }}">
                 @if ($errors->has('phone'))
                     <span class="help-block">
@@ -196,7 +199,7 @@ $( document ).ready(function() {
               </div>
 
               <div class="form-group{{ $errors->has('message') ? ' has-error' : '' }}">
-                <label for="message" class="control-label">Message</label>
+                Message
                 <textarea cols="50" rows="5" id="message" name="message" class="form-control">{{ old('message') }}</textarea>
                 @if ($errors->has('message'))
                     <span class="help-block">
@@ -212,5 +215,7 @@ $( document ).ready(function() {
         </div>
     </div>
 </div>
+<br>
+<br>
 
 @endsection
