@@ -9,12 +9,16 @@
     }
 
     .title1 {
-        font-size: 16;
+        font-size: 15;
+        color: #97D621;
+    }
+
+    h2 {
         color: #97D621;
     }
 
     .title2 {
-        font-size: 16;
+        font-size: 15;
     }
 
     div.c-wrapper {
@@ -25,6 +29,14 @@
     .carousel-inner > .item > img,
     .carousel-inner > .item > a > img {
         margin: auto;
+    }
+
+    p.gallery {
+        padding: 10px 10px 10px 10px;
+    }
+
+    img.gallery-image {
+        width: 100%;
     }
 
 </style>
@@ -118,7 +130,33 @@ $( document ).ready(function() {
       </a>
     </div>
     </div>
+
 <br>
+
+    <div class="row">
+        <div class="col-md-8">
+            <br>
+            <img src="/images/surface1_sm.jpg" alt="Surface 1">&nbsp;&nbsp;&nbsp;
+            <img src="/images/surface2_sm.jpg" alt="Surface 2">&nbsp;&nbsp;&nbsp;
+            <img src="/images/surface3_sm.jpg" alt="Surface 3">&nbsp;&nbsp;&nbsp;
+        </div>
+        <div class="col-md-4">
+            Our rendering services can be applied to any type of substrate including:<br>
+            <ul>
+                <li>Brick walls</li>
+                <li>Painted brick walls</li>
+                <li>Blocks</li>
+                <li>Concretes</li>
+                <li>Hebel Power Panel</li>
+                <li>Exsulite</li>
+                <li>AFS Logicwall</li>
+                <li>Dincel</li>
+            </ul>
+        </div>
+    </div>
+
+<br>
+
     <div class="row">
         <div class="col-md-7">
             <h2>WELCOME TO</h2>
@@ -195,33 +233,49 @@ $( document ).ready(function() {
                 @endif
               </div>
 
-              <input type="submit" class="btn btn-primary" value="Send">
+              <input type="submit" class="btn btn-success" value="Send">
             </form>
             @endif
 
         </div>
     </div>
 
+    <br>
+    <h2>GALLERY</h2>
     <div class="row">
         <div class="col-md-4">
-            Our rendering services can be applied to any type of substrate including:<br>
-            <ul>
-                <li>Brick walls</li>
-                <li>Painted brick walls</li>
-                <li>Blocks</li>
-                <li>Concretes</li>
-                <li>Hebel Power Panel</li>
-                <li>Exsulite</li>
-                <li>AFS Logicwall</li>
-                <li>Dincel</li>
-            </ul>
+            <p class="gallery">
+                <img src="/images/gall1_sm.jpg" alt="Gallery Left 1" class="gallery-image"><br>
+                <br>
+                <img src="/images/gall2_sm.jpg" alt="Gallery Left 2" class="gallery-image"><br>
+                <br>
+                <img src="/images/gall3_sm.jpg" alt="Gallery Left 3" class="gallery-image"><br>
+                <br>
+                <img src="/images/gall4_sm.jpg" alt="Gallery Left 4" class="gallery-image"><br>
+            </p>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-4">
+            <p class="gallery">
+                <img src="/images/galm1_sm.jpg" alt="Gallery Middle 1" class="gallery-image"><br>
+                <br>
+                <img src="/images/galm2_sm.jpg" alt="Gallery Middle 2" class="gallery-image"><br>
+                <br>
+                <img src="/images/galm3_sm.jpg" alt="Gallery Middle 3" class="gallery-image"><br>
+            </p>
         </div>
-    </div>
+        <div class="col-md-4">
+            <p class="gallery">
+                <img src="/images/galr1_sm.jpg" alt="Gallery Right 1" class="gallery-image"><br>
+                <br>
+                <img src="/images/galr2_sm.jpg" alt="Gallery Right 2" class="gallery-image"><br>
+                <br>
+                <img src="/images/galr3_sm.jpg" alt="Gallery Right 3" class="gallery-image"><br>
+                <br>
+                <img src="/images/galr4_sm.jpg" alt="Gallery Right 4" class="gallery-image"><br>
+            </p>
+        </div>
+    <br>
 
 </div>
-<br>
-<br>
 
 @endsection
