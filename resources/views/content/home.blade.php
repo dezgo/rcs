@@ -120,29 +120,15 @@ $( document ).ready(function() {
     </div>
 <br>
     <div class="row">
-        <div class="col-md-4">
-            Our rendering services can be applied to any type of substrate including:<br>
-            <ul>
-                <li>Brick walls</li>
-                <li>Painted brick walls</li>
-                <li>Blocks</li>
-                <li>Concretes</li>
-                <li>Hebel Power Pane</li>
-            </ul>
-        </div>
-        <div class="col-md-8">
-        </div>
-    </div>
-
-    <div class="row">
         <div class="col-md-7">
             <h2>WELCOME TO</h2>
             <h2>AAMEEN RENDERING &amp; CONSTRUCTION SERVICES PTY LTD</h2>
             Aameen Rendering &amp; Construction Services Pty Ltd offers high quality services
             and solutions that last.<br>
             <Br>
-            Based in Canberra, we provide services in the Australian Capital Territory and
-            New South Wales, and with a large team of experienced renderers, we can
+            We provide services in Sydney and the greater New South Wales area
+            as well as in the Australian Capital Territory, and with a large team
+            of experienced renderers, we can
             provide rendering services for large construction projects.<br>
             <br>
             We have recently increased our range of rendering services which enables us to
@@ -150,7 +136,8 @@ $( document ).ready(function() {
             <br>
             Our experienced team has knowledge in various unique finishes from basic
             conventional cement render to polymer-modified acrylic including architectural
-            finish coatings. We can also provide heritage cement for an antique finish.
+            finish coatings. We can also provide heritage cement for an antique finish.<br>
+            <br>
         </div>
         <div class="col-md-5">
             @if (session('message_success'))
@@ -214,6 +201,25 @@ $( document ).ready(function() {
 
         </div>
     </div>
+
+    <div class="row">
+        <div class="col-md-4">
+            Our rendering services can be applied to any type of substrate including:<br>
+            <ul>
+                <li>Brick walls</li>
+                <li>Painted brick walls</li>
+                <li>Blocks</li>
+                <li>Concretes</li>
+                <li>Hebel Power Panel</li>
+                <li>Exsulite</li>
+                <li>AFS Logicwall</li>
+                <li>Dincel</li>
+            </ul>
+        </div>
+        <div class="col-md-8">
+        </div>
+    </div>
+
 </div>
 <br>
 <br>
