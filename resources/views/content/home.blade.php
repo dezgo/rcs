@@ -8,12 +8,15 @@
         font-size: 14pt;
     }
 
-    .title1 {
-        font-size: 15;
-        color: #97D621;
+    .footer {
+        font-size: 12pt;
     }
 
-    h2 {
+    .title1 {
+        font-size: 15;
+    }
+
+    h2, .title1 {
         color: #97D621;
     }
 
@@ -56,7 +59,7 @@ $( document ).ready(function() {
 @stop
 
 @section('content')
-<div class="container">
+<div class="container" id="home">
     <div class="row">
         <div class="col-md-4">
             <img alt="Aameen Rendering Logo" src="/images/logo.png">
@@ -64,7 +67,7 @@ $( document ).ready(function() {
         <div class="col-md-8 text-right">
             <br>
             <span class="title1">SYDNEY</span>&nbsp;
-            <span class="title2">02&nbsp;9794&nbsp;3434</span>
+            <span class="title2">02&nbsp;9740&nbsp;3434</span>
             &nbsp;&nbsp;&nbsp;&nbsp;
             <span class="title1">CANBERRA</span>&nbsp;
             <span class="title2">02&nbsp;6130&nbsp;1855</span>
@@ -75,7 +78,6 @@ $( document ).ready(function() {
         <div class="col-md-12">
             <a href="#home"><img class="menu_btn" alt="Home Menu" src="/images/home_btn.gif"></a>
             <a href="#gallery"><img class="menu_btn" alt="Gallery Menu" src="/images/gallery_btn.gif"></a>
-            <a href="#portfolio"><img class="menu_btn" alt="Portfolio Menu" src="/images/portfolio_btn.gif"></a>
             <a href="#contact"><img class="menu_btn" alt="Contact Us Menu" src="/images/contact_btn.gif"></a>
         </div>
     </div>
@@ -241,7 +243,7 @@ $( document ).ready(function() {
     </div>
 
     <br>
-    <h2>GALLERY</h2>
+    <h2 id="gallery">GALLERY</h2>
     <div class="row">
         <div class="col-md-4">
             <p class="gallery">
@@ -274,8 +276,61 @@ $( document ).ready(function() {
                 <img src="/images/galr4_sm.jpg" alt="Gallery Right 4" class="gallery-image"><br>
             </p>
         </div>
-    <br>
+        <br>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12">
+            <h2 id="contact">CONTACT</h2>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-5">
+            <table>
+                <tr>
+                    <td class="title1">Email:</td>
+                    <td>info@aameenrendering.com.au</td>
+                </tr>
+                <tr>
+                    <td class="title1">Mobile:&nbsp;&nbsp;</td>
+                    <td>0430 003 434</td>
+                </tr>
+            </table>
+        </div>
+        <div class="col-md-4">
+            <div class="title1">
+                Canberra
+            </div>
+            1/42 Essington Street<br>
+            Mitchell ACT 2911<br>
+            02 6130 1855
+        </div>
+        <div class="col-md-3">
+            <div class="title1">
+                Sydney
+            </div>
+            56 Beauchamp Street<br>
+            Wiley Park NSW 2195<br>
+            02 9740 3434
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-12 text-center footer">
+            <br><Br><br>
+                <a href="#home"><img src="/images/back_to_top_sm.png" alt='Back to top'></a>
+                Back to top
+                <br>
+                <hr>
+                <i class="fa fa-copyright" aria-hidden="true"></i>
+                Copyright 2016 AAMEEN RENDERING AND CONSTRUCTION SERVICES. All rights
+                reserved.<br>Website designed by
+                <a href="http://computerwhiz.com.au" target="_blank">Computer Whiz - Canberra</a>
+        </div>
+    </div>
 
 </div>
+<Br>
 
 @endsection
