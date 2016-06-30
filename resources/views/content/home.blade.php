@@ -94,6 +94,8 @@ $( document ).ready(function() {
         <li data-target="#carousel-rcs" data-slide-to="4"></li>
         <li data-target="#carousel-rcs" data-slide-to="5"></li>
         <li data-target="#carousel-rcs" data-slide-to="6"></li>
+        <li data-target="#carousel-rcs" data-slide-to="7"></li>
+        <li data-target="#carousel-rcs" data-slide-to="8"></li>
       </ol>
 
       <!-- Wrapper for slides -->
@@ -119,6 +121,12 @@ $( document ).ready(function() {
         <div class="item">
             <img src="/images/sld7.jpg" alt="Slide 7">
         </div>
+        <div class="item">
+            <img src="/images/sld8.jpg" alt="Slide 8">
+        </div>
+        <div class="item">
+            <img src="/images/sld9.jpg" alt="Slide 9">
+        </div>
       </div>
 
       <!-- Controls -->
@@ -138,11 +146,14 @@ $( document ).ready(function() {
     <div class="row">
         <div class="col-md-8">
             <br>
-            <img src="/images/surface1_sm.jpg" alt="Surface 1">&nbsp;&nbsp;&nbsp;
-            <img src="/images/surface2_sm.jpg" alt="Surface 2">&nbsp;&nbsp;&nbsp;
-            <img src="/images/surface3_sm.jpg" alt="Surface 3">&nbsp;&nbsp;&nbsp;
+            <img src="/images/text1_sm.jpg" alt="Surface 1">&nbsp;&nbsp;&nbsp;
+            <img src="/images/text2_sm.jpg" alt="Surface 2"><br>
+            <br>
+            <img src="/images/text4_sm.jpg" alt="Surface 3">&nbsp;&nbsp;&nbsp;
+            <img src="/images/text3_sm.jpg" alt="Surface 4">&nbsp;&nbsp;&nbsp;
         </div>
         <div class="col-md-4">
+            <br>
             Our rendering services can be applied to any type of substrate including:<br>
             <ul>
                 <li>Brick walls</li>
